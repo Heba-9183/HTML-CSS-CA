@@ -12,17 +12,51 @@ header {
   align-items: center;
   color: black;
 }
+
 body {
-  background-image: url("../images/bg.jpg");
-  background-color: white;
+  background-image: url("../images/esspresso.jpg");
+  background-position-x: right;
+  background-color: black;
+  display: grid;
   background-repeat: no-repeat;
   min-height: 70vh;
   background-size: cover;
-  display: grid;
-  grid-gap: lem;
   grid-template-rows: auto;
 }
+p {
+  color: white;
+  font-size: large;
+  margin: 100px;
+  font: Avenir;
+}
+h1 {
+  font: Helvetica;
+  font-style: italic;
+  color: burlywood;
+}
+h2 {
+  font: Helvetica;
+  font-style: italic;
+  color: burlywood;
+}
+h3 {
+  font: Helvetica;
+  font-style: italic;
+  color: black;
+}
 
+h4 {
+  font: serif;
+  font-size: 18px;
+  color: wheat;
+
+  font-weight: 500;
+  text-decoration: underline;
+}
+h5 {
+  color: wheat;
+  font: serif;
+}
 main {
   background-position: right;
 }
@@ -31,39 +65,6 @@ main {
   border-image: fill;
   margin: 30px;
 }
-
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-h2 {
-  font: Avenir;
-  font-style: italic;
-  color: white;
-  align: center;
-  float: right;
-}
-h3 {
-  font: Helvetica;
-  color: black;
-  text-align: start;
-  font-style: italic;
-  position: relative;
-}
-h4 {
-  font: serif;
-  font-size: 18px;
-  color: white;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  font-weight: 500;
-  text-decoration: underline;
-}
-h5 {
-  color: white;
-  font: serif;
-}
-
 nav li {
   width: auto;
   display: inline-block;
@@ -71,12 +72,9 @@ nav li {
   padding: 5px;
   position: relative;
   font-size: 20px;
-  
 }
 nav ul {
-  float: right;
-  align-items: center;
- 
+  float: left;
 }
 nav a {
   color: white;
@@ -85,35 +83,31 @@ nav a {
 a {
   text-decoration: none;
 }
-nav a :hover {
+
+a:hover {
   text-decoration: underline;
-  background-color: brown;
 }
 .form {
-  width: 200px;
-  height: 44px;
+  width: 1000px;
+  height: 440px;
   border-radius: 20px;
   display: block;
   flex-direction: row;
   align-items: center;
-  float: right;
-  margin: 10px;
+  float: left;
+  margin-left: 400px;
+  color: bisque;
 }
 .wrap-search {
   float: right;
   margin: auto;
 }
-p {
-  font: sans-serif;
-  font-size: 20px;
-  color: rgb(7, 7, 90);
-  font-style: italic;
-}
+
 general {
   margin-top: 0px;
   margin-right: 10px;
   margin-left: 80px;
-  width: 50%;
+  width: 70%;
   float: left;
   min-height: 175px;
   position: relative;
@@ -121,18 +115,25 @@ general {
 .item {
   position: relative;
   padding: 10px;
-  margin: auto;
+  margin: 0;
   display: grid;
   min-height: 175px;
-  
   position: relative;
   text-align: left;
   width: 80%;
   float: right;
-
-
-
-
+}
+.item1 {
+  position: relative;
+  padding: 200px;
+  margin: 0;
+  display: grid;
+  min-height: 175px;
+  position: relative;
+  text-align: left;
+  width: 80%;
+  float: right;
+}
 
 .footer {
   padding: 70px 0px;
@@ -155,22 +156,15 @@ footer-col {
   width: 25%;
   padding: 0 10px;
 }
+
 * {
   margin: 0px;
   padding: 0px;
-  list-style: none;
+
   text-decoration: none;
   box-sizing: border-box;
 }
 
-footer-col h4 {
-  font: serif;
-  font-size: 18px;
-  color: white;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  font-weight: 500;
-}
 .footer-row .footer-col {
   width: calc(21.6666666667% - 20px);
   margin-right: 10px;
@@ -181,10 +175,45 @@ footer-col h4 {
 .footer-row .footer-col:last-child {
   margin-right: 0;
 }
-.imageex {
-  float: left;
-  width: 300px;
-  height: 300px;
+
+.location {
+  margin: 50px;
+  padding: 20px;
+  color: bisque;
+}
+.view {
+  width: 600px;
+  height: 400px;
   border-radius: 10px;
-  display: grid;
+  margin: 200px;
+}
+.label {
+  color: bisque;
+}
+.moving {
+  font-family: sans-serif;
+  -webkit-text-stroke: 1px rgb(25, 5, 58);
+  font-weight: bold;
+  color: rgb(240, 135, 65);
+  margin: 5px;
+  width: auto;
+  height: auto;
+}
+.align {
+  margin-left: 225px;
+}
+
+.align1 {
+  margin-left: 375px;
+}
+.locations {
+  color: bisque;
+}
+.viewproduct {
+  width: 400;
+  height: 300;
+  margin-left: 475px;
+}
+.product {
+  margin-left: 610px;
 }
